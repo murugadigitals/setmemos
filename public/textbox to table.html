@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var names=["proddatur"];
+        function AddtoArray(){
+            // alert("Working");
+            var cityname=input.value;
+            // alert(cityname)
+
+            names.push(cityname);
+            // alert(`${cityname} is added to the list`);
+
+            // console.log(names);
+            BodyLoad();
+
+        }
+        function BodyLoad(){
+            document.getElementById("input").innerHTML="";
+            for(var city of names)
+            {
+                // document.write(city+"<br>")
+                console.log(city+"/n")
+            }   
+        }
+        // document.write(names);
+    </script>
+</head>
+<body>
+    <input type="text" id="input">
+    <button onclick="AddtoArray()">Add</button>
+</body>
+</html>

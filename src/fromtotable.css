@@ -1,0 +1,78 @@
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+
+
+}
+#rightAlign{
+    text-align: right;
+}
+
+.indent{
+    /* text-transform: uppercase; */
+    text-indent: 10px;
+}
+
+.logo{
+    /* position: relative; */
+    height: 70px;
+    z-index: -100;
+
+}
+
+.leftlogo{
+    position:absolute;
+    top:0px;
+    right:0px;
+    z-index: -2;
+}
+
+.rightlogo{
+    position:absolute;
+    top:0px;
+    left:0px;
+    z-index: -20;
+    /* z-index: -2; */
+}
+
+.toprow{
+    text-align: center;
+    background-color: greenyellow;
+    height: 35px;
+}
+
+#sname{
+    width: 720px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+h5{
+    font-size: 16px;
+}
+@media print{
+    .col-5{
+        display: none;
+    }
+    #sname{
+        width: 720px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    hr{
+        display: none;
+    }
+    .mainTable{
+        position: relative;
+        margin-top: 10px;
+        background-image: url(../assests/logo.png);
+        background-repeat: no-repeat;
+        background-position: 150px 50%;
+    }
+    
+}

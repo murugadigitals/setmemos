@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MTS Annexure Tirupati RMS/2B</title>
+    <style>
+        @media print{
+            #print{
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body contenteditable="true">
+    <div style="text-align: center;">
+        <script>
+            var today = new Date();
+            var mdate = `${today.getDate()} / ${today.getMonth() + 1} / ${today.getFullYear()}`;
+            document.write(`<h4 style="line-height:20px">Department of Posts :: India <br>Head Record Office, RMS TP Division., Tirupati - 517501 <br>
+            MTS Annexure TIRUPATI HUB/2B Dated ${mdate} Working Hrs : 17:30 Hrs To 06:00 Hrs</h4>`)
+        </script>
+    </div>
+    <hr>
+    <div style="display: flex;justify-content: center; padding-top: 20px;">
+        <table border width="720" cellspacing="0">
+            <thead>
+                <tr>
+                    <th>S.NO</th>
+                    <th>Name of the Outsider<br>worked in Vacant<br>Post</th>
+                    <th>Duty<br>From</th>
+                    <th>Duty<br>To</th>
+                    <th>Total<br>Hrs</th>
+                    <th>Nature of <br>Work<br>Allotted</th>
+                    <th>Signature of<br>the<br>Outsider</th>
+                    <th>Remarks</th>
+                </tr>
+            </thead>
+            <tbody align="center">
+                <script>
+                    let i, n;
+                    let osanames = [];
+                    n = +prompt("Enter No of MTS Required For the SET  : ")
+                    for (i = 1; i <= n; i++) {
+                        document.write(`
+                    <tr>
+                        <td>${i}</td>
+                        <td style="text-align:left;text-indent:10px">${osanames[i] = prompt("Enter Name of the MTS :")}</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>`)
+                    }
+                </script>
+            </tbody>
+            <tfoot align="center">
+                <tr>
+                    <td colspan="4">Total</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+
+    <div class="logo">
+        <div style="position:fixed;top:15px;right:0px">
+            <img src="../assests/logo.png" width="140px" height="70px" alt="logo here">
+        </div>
+    </div>
+    <br>
+    <div style="display: flex;justify-content: space-between;">
+        <div style="text-align: center;">
+            <h4>Head Record Officer<br> RMS TP Dn.,Tirupati - 517501</h4>
+        </div>
+
+        <div style="text-align: center;">
+            <h4>Signature of the HSA<br> Tirupati HUB/2B</h4>
+        </div>
+    </div>
+    <DIV style="text-align: end;">
+        <button style=" width: 150px;height: 40px;font-size: 20px;background-color: orange;color:white;" id="print" onclick="javascript:print()">Print</button>
+    </DIV>
+
+
+</body>
+
+</html>
